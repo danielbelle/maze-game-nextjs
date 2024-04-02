@@ -19,3 +19,9 @@ button {
 	background: none;
 	-webkit-tap-highlight-color: transparent;
 }
+
+.barrier {
+	position: absolute;
+	background: #fff;
+}
+
