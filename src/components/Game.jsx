@@ -62,10 +62,14 @@ export default function Game() {
         if (next) {
           next.visited = true;
           this.stack.push(current);
+          current.color = "green";
+          current.highlight();
           current.removeWalls(current, next);
           current = next;
         } else if (this.stack.length > 0) {
+          current.color = "black";
           let cell = this.stack.pop();
+          current.highlight();
           current = cell;
         }
 
@@ -92,6 +96,7 @@ export default function Game() {
         };
         this.visited = false;
         this.neighbours = [];
+        this.color = "black";
       }
 
       setNeighbours() {
@@ -125,6 +130,16 @@ export default function Game() {
         c.moveTo(fromX, fromY);
         c.lineTo(toX, toY);
         c.stroke();
+      }
+
+      highlight() {
+        c.fillStyle = "red";
+        c.fillRect(
+          this.colNum * this.size + 1,
+          this.rowNum * this.size + 1,
+          this.size - 2,
+          this.size - 2
+        );
       }
 
       removeWalls(cell1, cell2) {
@@ -188,6 +203,15 @@ export default function Game() {
 
       show() {
         this.drawWalls();
+        if (this.visited) {
+          c.fillStyle = this.color;
+          c.fillRect(
+            this.colNum * this.size + 1,
+            this.rowNum * this.size + 1,
+            this.size - 2,
+            this.size - 2
+          );
+        }
       }
     }
 
