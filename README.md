@@ -74,12 +74,12 @@ classes
 a
 
 
-### Como gerar automaticamente o labirinto: |||| [EM CONSTRUÇÃO]
+### Como gerar automaticamente o labirinto: 
 Depth-first Search
 * Como solucionar: M
 
 
-## ⏭️ Próximos passos:
+## ⏭️ Próximos passos: |||| [EM CONSTRUÇÃO]
 
 ### 
 
