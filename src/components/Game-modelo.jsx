@@ -21,7 +21,10 @@ export default function Game() {
   });
 
   return (
-    <div id="container" className=" bg-[#222] grid grid-rows-2">
+    <div
+      id="container"
+      className=" bg-[#222] grid grid-rows-2"
+    >
       <div className="mbox">
         <div className="bg-[#222] flex items-center justify-center h-[100hv] overflow-hidden pt-2 pb-2">
           <canvas></canvas>
