@@ -10,7 +10,7 @@ Para desenvolvê-lo, tomei como base 3 exemplos que encontrei:
 
 E tomei o desafio de juntar o melhor dos três, algoritmo gerador de labirinto, painel de controles do jogo e modo de jogar, respectivamente. Além disso, dei um passo além e resolvi compilar utilizando o framework Next.js em vez de utilizar JavaScript simples (index.html, style.css e script.js).
 
-<img src="https://github.com/danielbelle/maze-game-nextjs/tree/main/src/app/assets/maze-photo.png" alt="Maze" />
+<img src="https://github.com/danielbelle/maze-game-nextjs/blob/main/src/assets/maze-photo.png" alt="Maze" />
 
 
 ### Tecnologias Utilizadas
