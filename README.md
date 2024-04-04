@@ -1,79 +1,86 @@
-# modelo-README.md
-Modelo (template) de README para utilizar nas documentações dos seus projetos no GitHub. Deixe sua ⭐ se curtiu o template, para ficar salvo e utilizar depois.
+# Jogo do Labirinto com Algoritmo Busca em Profundidade (Depth-First Search)
 
-# Título/Nome do projeto
+O objetivo deste projeto é construir um jogo de labirinto. Onde o próprio jogo gera o labirinto e o usuário deve encontrar o ponto de saída.
 
-Descreva brevemente o seu projeto. Aqui você pode utilizar texto e também imagens/diagramas.
+Para desenvolvê-lo, tomei como base 3 exemplos que encontrei:
 
-* O [Mermaid](https://mermaid.live/edit#pako:eNpVkE1uwjAQha9izapIZFGWWVSCBFZUVCq7mMXInjSW_Fdji6Ikp2HRg3CxmmRDZzV633uj0etBOElQQqvdRXQYIjvW3LI862bttRJ4_73fHHs9saJ4GwJ9JzrHgW1enulqMWc2DxOr-u0PGa_dOKvVFD1YGljd7NFH50_P5HhxA9s26qNzlv6TLlBO7ZoWyxYLgYFVGCYLLMFQMKhk_r5_KBxiR4Y4lHmV1GLSkQO3Y7Ziiu7zagWUMSRaQvISI9UKvwIayLf1OaskVXThfW5kKmb8AyAeX3o) é uma opção bem legal para diagramas e você consegue utilizar diretamente no README.md:
+- Gerador do labirinto utilizando o Algoritmo JavaScript simples [Depth-First Search video](https://www.youtube.com/watch?v=UnKvDZ7wqUY);
+- Maze Generator com painel de controles em JavaScript simples [video](https://www.youtube.com/watch?v=RrpFqVBLlmI);
+- Modelo de estilo CSS e modo de jogar em JavaScript simples [video](https://www.youtube.com/shorts/DLu3sh4wWxg).
 
-[![](https://mermaid.ink/img/pako:eNpVkE1uwjAQha9izapIZFGWWVSCBFZUVCq7mMXInjSW_Fdji6Ikp2HRg3CxmmRDZzV633uj0etBOElQQqvdRXQYIjvW3LI862bttRJ4_73fHHs9saJ4GwJ9JzrHgW1enulqMWc2DxOr-u0PGa_dOKvVFD1YGljd7NFH50_P5HhxA9s26qNzlv6TLlBO7ZoWyxYLgYFVGCYLLMFQMKhk_r5_KBxiR4Y4lHmV1GLSkQO3Y7Ziiu7zagWUMSRaQvISI9UKvwIayLf1OaskVXThfW5kKmb8AyAeX3o?type=png)](https://mermaid.live/edit#pako:eNpVkE1uwjAQha9izapIZFGWWVSCBFZUVCq7mMXInjSW_Fdji6Ikp2HRg3CxmmRDZzV633uj0etBOElQQqvdRXQYIjvW3LI862bttRJ4_73fHHs9saJ4GwJ9JzrHgW1enulqMWc2DxOr-u0PGa_dOKvVFD1YGljd7NFH50_P5HhxA9s26qNzlv6TLlBO7ZoWyxYLgYFVGCYLLMFQMKhk_r5_KBxiR4Y4lHmV1GLSkQO3Y7Ziiu7zagWUMSRaQvISI9UKvwIayLf1OaskVXThfW5kKmb8AyAeX3o)
+E tomei o desafio de juntar o melhor dos três, algoritmo gerador de labirinto, painel de controles do jogo e modo de jogar, respectivamente. Além disso, dei um passo além e resolvi compilar utilizando o framework Next.js em vez de utilizar JavaScript simples (index.html, style.css e script.js).
 
-- No site, vá no campo: Actions > Copy Markdown. Copie o link e cole no seu arquivo README.md e o diagrama estará lá.
+<img src="https://github.com/danielbelle/maze-game-nextjs/tree/main/src/app/assets/maze-photo.png" alt="Maze" />
 
 
 ### Tecnologias Utilizadas
 
-Liste as tecnologias (linguagens, ferramentas, bibliotecas) que você utilizou para elaborar o projeto. Essa parte é importante para quando um recrutador (que não tem conhecimento de programação) acessar o seu projeto, ele vai saber só olhando a documentação quais tecnologias você já conhece!
+Neste projeto utilizei Next.js, React, Tailwind CSS, JavaScript e React Icons.
 
-Exemplo:
-* [Golang](https://github.com/golang/go)
-* [Docker](https://www.docker.com/)
-* [MySQL](https://www.mysql.com/)
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
 ## Dependências e Versões Necessárias
 
-Liste as dependências necessárias para rodar o projeto e as versões que você utilizou.
-
-* Docker - Versão: X.X
+- Next.js - Versão: 14.1.4
+- React - Versão: 18+
+- Tailwind CSS - Versão: 3.3.0
+- React Icons - Versão: 5.0.1+
 
 ## Como rodar o projeto ✅
 
-Descreva o passo a passo necessário para rodar sua aplicação. Lembre-se: a pessoa nunca rodou seu projeto. Não tenha medo de detalhar o máximo possível. Isso é necessário!
+Primeiramente baixe o repositório deste GitHub e abra seu editor de código na pasta raiz.
 
-Uma boa forma de descrever o passo a passo é:
+Assim, no terminal rode o comando:
 
 ```
-Comando 1
+npm install
 ```
 
 Depois, rode o seguinte comando:
 
 ```
-Comando 2
+npm run dev
 ```
 
-Deixe claro como a pessoa pode confirmar que a aplicação está rodando da forma correta. Pode ser com prints ou a mensagem que ela deve esperar.
-
-## Como rodar os testes
-
-Explique como rodar os testes da aplicação. Exemplo de um comando usando Makefile para rodar os testes:
+Dessa forma, irá aparecer o link para o localhost:
 
 ```
-make test
+http://localhost:3000
 ```
 
-## 📌 (Título) - Informações importantes sobre a aplicação (exemplo) 📌
+<img src="https://github.com/danielbelle/nextjs-tailwindcss-landing/blob/main/public/assets/github-install.png" alt="Projeto" />
 
-Esse é o local para você preencher com outras informações que possam ser importantes para a aplicação. Coloquei um exemplo de título, mas você deve preencher de acordo com a necessidade do projeto. Pode ser que não seja necessário.
+Você também pode fazer deploy gratuito do projeto no site [Vercel](https://vercel.com/) seguindo este [tutorial](https://www.youtube.com/watch?v=e_92Fz99q18).
 
-Um bom exemplo: se você estiver construindo uma API, liste as rotas da aplicação e quais serão os seus retornos. Isso facilita para quem vai consumir a API.
+
+## 🧠 Habilidades, conhecimentos e experiências retidas
+
+### Depth-First Search
+1
+
+### Utilização do Next.js
+classes
+
+### Converter projetos em Next.js
+1
 
 
 ## ⚠️ Problemas enfrentados
 
-Liste os problemas que você enfrentou construindo a aplicação e como você resolveu cada um deles. Você que desenvolveu o projeto é a pessoa que mais conhece/entende os possíveis problemas que uma pessoa pode enfrentar rodando a aplicação. Compartilhe esse conhecimento e facilite a vida da pessoa descrevendo-os.
+a
 
-Exemplo:
 
-### Problema 1:
-Descrição do problema
-* Como solucionar: explicar a solução.
+### Como gerar automaticamente o labirinto:
+Depth-first Search
+* Como solucionar: M
 
-### Problema 2:
-Descrição do problema
-* Como solucionar: explicar a solução.
 
-## ⏭️ Próximos passos
+## ⏭️ Próximos passos:
 
-Descreva se você pretende, pensou ou gostaria de elaborar uma nova feature para o seu projeto definindo os próximos passos.
+### 
+
+### 
