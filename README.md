@@ -57,7 +57,7 @@ http://localhost:3000
 Você também pode fazer deploy gratuito do projeto no site [Vercel](https://vercel.com/) seguindo este [tutorial](https://www.youtube.com/watch?v=e_92Fz99q18).
 
 
-## 🧠 Habilidades, conhecimentos e experiências retidas
+## 🧠 Habilidades, conhecimentos e experiências retidas |||| [EM CONSTRUÇÃO]
 
 ### Depth-First Search
 1
@@ -69,12 +69,12 @@ classes
 1
 
 
-## ⚠️ Problemas enfrentados
+## ⚠️ Problemas enfrentados |||| [EM CONSTRUÇÃO]
 
 a
 
 
-### Como gerar automaticamente o labirinto:
+### Como gerar automaticamente o labirinto: |||| [EM CONSTRUÇÃO]
 Depth-first Search
 * Como solucionar: M
 
