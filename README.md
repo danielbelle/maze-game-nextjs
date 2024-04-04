@@ -4,9 +4,9 @@ O objetivo deste projeto é construir um jogo de labirinto. Onde o próprio jogo
 
 Para desenvolvê-lo, tomei como base 3 exemplos que encontrei:
 
-- Gerador do labirinto utilizando o Algoritmo JavaScript simples [Depth-First Search video](https://www.youtube.com/watch?v=UnKvDZ7wqUY);
-- Maze Generator com painel de controles em JavaScript simples [video](https://www.youtube.com/watch?v=RrpFqVBLlmI);
-- Modelo de estilo CSS e modo de jogar em JavaScript simples [video](https://www.youtube.com/shorts/DLu3sh4wWxg).
+- Gerador do labirinto utilizando o Algoritmo JavaScript simples [Depth-First Search vídeo](https://www.youtube.com/watch?v=UnKvDZ7wqUY);
+- Maze Generator com painel de controles em JavaScript simples [vídeo](https://www.youtube.com/watch?v=RrpFqVBLlmI);
+- Modelo de estilo CSS e modo de jogar em JavaScript simples [vídeo](https://www.youtube.com/shorts/DLu3sh4wWxg).
 
 E tomei o desafio de juntar o melhor dos três, algoritmo gerador de labirinto, painel de controles do jogo e modo de jogar, respectivamente. Além disso, dei um passo além e resolvi compilar utilizando o framework Next.js em vez de utilizar JavaScript simples (index.html, style.css e script.js).
 
