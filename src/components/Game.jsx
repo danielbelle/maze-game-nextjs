@@ -17,7 +17,106 @@ export default function Game() {
 
     maze.setup();
     maze.draw();
-    console.log(maze.grid);
+    //console.log(maze.grid);
+
+    //tilt vars
+    let lastUD = 0;
+    let lastLR = 0;
+    const mThreshold = 15;
+    let firstMove = true;
+    let allowTilt = true;
+
+    const bu = document.getElementById("btn-bu");
+    const bd = document.getElementById("btn-bd");
+    const bl = document.getElementById("btn-bl");
+    const br = document.getElementById("btn-br");
+
+    document.addEventListener("keydown", keys);
+
+    function keys(e) {
+      let code = e.code;
+      switch (code) {
+        //arrows
+        case "ArrowUp":
+          up();
+          break;
+        case "ArrowDown":
+          down();
+          break;
+        case "ArrowLeft":
+          left();
+          break;
+        case "ArrowRight":
+          right();
+          break;
+        //wasd
+        case "KeyW":
+          up();
+          break;
+        case "KeyS":
+          down();
+          break;
+        case "KeyA":
+          left();
+          break;
+        case "KeyD":
+          right();
+          break;
+      }
+    }
+
+    bu.addEventListener("click", (e) => {
+      up();
+      firstMove = true;
+    });
+    bd.addEventListener("click", (e) => {
+      down();
+      firstMove = true;
+    });
+    bl.addEventListener("click", (e) => {
+      left();
+      firstMove = true;
+    });
+    br.addEventListener("click", (e) => {
+      right();
+      firstMove = true;
+    });
+
+    function up() {
+      console.log("up");
+      /*animKeys(bu);
+      if (checkYboundry("u")) {
+        thingie.style.top = thingie.offsetTop - step + "px";
+        updateEmo(false);
+      }*/
+    }
+
+    function down() {
+      console.log("down");
+      /*animKeys(bd);
+      if (checkYboundry("d")) {
+        thingie.style.top = thingie.offsetTop + step + "px";
+        updateEmo(false);
+      }*/
+    }
+
+    function left() {
+      console.log("left");
+      /*animKeys(bl);
+      if (checkXboundry("l")) {
+        thingie.style.left = thingie.offsetLeft - step + "px";
+      }
+      updateEmo(true);*/
+    }
+
+    function right() {
+      console.log("right");
+      /*animKeys(br);
+      if (checkXboundry("r")) {
+        thingie.style.left = thingie.offsetLeft + step + "px";
+      }
+      updateEmo(true);*/
+    }
   });
 
   return (
